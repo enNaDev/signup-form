@@ -1,0 +1,56 @@
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+  text-align: center;
+  height: 60vh;
+  width: 600px;
+  padding: 80px 0;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+mat-form-field {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 15px 50px;
+  background-color: rgba(191, 179, 245, 1) !important;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+button:disabled {
+  background-color: rgba(191, 179, 245, 0.2) !important;
+}
+
+button img {
+  display: block;
+  width: 140px;
+}
+
+/* Media queries */
+@media screen and (max-width: 750px) {
+  form {
+    width: 450px;
+  }
+
+  button img {
+    width: 80px;
+  }
+}
+/* Media queries */
+@media screen and (max-width: 520px) {
+  form {
+    width: 300px;
+  }
+}

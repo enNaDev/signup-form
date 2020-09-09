@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 17px !important;
+  color: lightgrey;
+}
+
+
+/* Overide Angular Material Styles */
+.mat-form-field-infix {
+  /* Mat-field width */
+  min-width: 300px !important;
+}
+
+.mat-form-field-label,
+.mat-form-field-ripple {
+  /* Label is down */
+  color: lightgrey !important;
+}
+
+.mat-form-field-underline {
+  /* Underline */
+  background-color: lightgrey !important;
+}
+
+.mat-focused .mat-form-field-label,
+::placeholder,
+.mat-focused .mat-form-field-ripple {
+  /* Label is up & placeholder & Underline effect on click*/
+  color: rgb(191, 179, 245) !important;
+}
+
+.mat-form-field-subscript-wrapper {
+  /* Error message */
+  font-size: 85% !important;
+}
+
+/* Make the autofill's background transparent */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  transition: background-color 3000s; /* jsut a big number for applying the effect of transparency */
+  -webkit-text-fill-color: lightgrey !important;
+}
+
+/* AlertifyJS */
+.alertify .ajs-dialog {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -135%);
+  margin: 0;
+}
+
+.ajs-header {
+  display: none;
+}
+.alertify .ajs-header {
+  background-color: unset;
+  border-bottom: none;
+}
+
+.alertify .ajs-body .ajs-content {
+  padding: 35px 65px;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
+
+.alertify .ajs-footer {
+  padding: 10px;
+}
+
+.alertify .ajs-footer .ajs-buttons.ajs-primary {
+  text-align: center;
+}
+
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok {
+  color: rgba(0,0,0,0.8);
+  background-color: lightgrey;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.alertify .ajs-footer .ajs-buttons .ajs-button.ajs-ok:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: lightgrey;
+}
+
+/* Media queries */
+@media screen and (max-width: 750px) {
+  .mat-form-field-infix {
+    min-width: 150px !important;
+  }
+}
