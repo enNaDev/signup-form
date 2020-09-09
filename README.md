@@ -1,5 +1,7 @@
 # Signup Form
 
+#### Live demo: https://ennadev.github.io/signup-form/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.6.
 
 This is a signup form, built with Angular and Angular Material for the styling. 
@@ -7,7 +9,6 @@ Validators have been applied to every field of the form and asynchronous validat
 In the case the email exists, the user cannot submit the form and a corresponding error message appears.
 Also, the user gets informed whether his submission has been successful or has been failed.
 
-Live demo: https://ennadev.github.io/signup-form/
 
 
 
