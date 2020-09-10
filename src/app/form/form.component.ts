@@ -6,7 +6,7 @@ import { Request } from '../models/request';
 import { EmailCheckValidators } from '../common/email-check.validators';
 import { Endpoints } from '../common/endpoints';
 
-declare let alertify: any;
+import { alertifyAlert } from '../alertify';
 
 @Component({
   selector: 'app-form',
@@ -53,25 +53,14 @@ export class FormComponent implements OnInit {
 
     this.httpService.post(this.submissionUrl, this.dataToSend).subscribe(
       (data) => {
-        let firstName = data.data.firstName;
-        alertify.dialog('alert').set({
-            transition: 'fade',
-            message: `${firstName}, your request submitted successfully!`
-          }).show();
-
+        alertifyAlert(`${data.data.firstName}, your request submitted successfully!`);
         this.resetForm(this.f);
       },
       (err) => {
         if (err.status == 400) {
-          alertify.dialog('alert').set({
-            transition: 'fade',
-            message: err.error.errors[0].message
-          }).show()
+          alertifyAlert(err.error.errors[0].message);
         } else {
-          alertify.dialog('alert').set({
-            transition: 'fade',
-            message: 'Something went wrong! Your request has not been submitted. Please try again.'
-          }).show()
+          alertifyAlert('Something went wrong! Your request has not been submitted. Please try again.')
         }
       }
     );
