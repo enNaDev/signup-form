@@ -20,8 +20,9 @@ mat-form-field {
 
 button {
   margin-top: 15px;
-  padding: 15px 50px;
+  padding: 10px 35px;
   background-color: rgba(191, 179, 245, 1) !important;
+  font-size: 16px;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -32,19 +33,10 @@ button:disabled {
   background-color: rgba(191, 179, 245, 0.2) !important;
 }
 
-button img {
-  display: block;
-  width: 140px;
-}
-
 /* Media queries */
 @media screen and (max-width: 750px) {
   form {
     width: 450px;
-  }
-
-  button img {
-    width: 80px;
   }
 }
 /* Media queries */
