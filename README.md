@@ -4,9 +4,9 @@
 
 This is a demonstration of a signup form with validations. The project is built with Angular 10 and Angular Material for the styling. 
 Key concepts:
-- Required validator for all fields.
-- Asynchronous validation for checking if the email already exists. For activating the email validator, try to input `test@test.com` which already exists.
-- Min length of 3 characters validation for the password.
+- Built-in required validator for all fields.
+- Custom asynchronous validation for checking if the email already exists. For activating the email validator, try to input `test@test.com` which already exists.
+- Built-in minimum length of 3 characters validation for the password.
 - In the case any field is invalid, the submission button is disabled and the user cannot submit the form.
 - Error messages notify the user for each error accordingly.
 - Notify the user whether the submission was successful or failed.
