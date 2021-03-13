@@ -2,7 +2,7 @@
 
 #### Live demo: https://ennadev.github.io/signup-form/
 
-This is a demonstration of a signup form with validations. The project is built with Angular 10 and Angular Material for the styling. 
+This is a demonstration of a signup form with validations. The project is built with Angular 10 using Angular Material. 
 Key concepts:
 - Built-in required validator for all fields.
 - Custom asynchronous validation for checking if the email already exists. For activating the email validator, try to input `test@test.com` which already exists.
